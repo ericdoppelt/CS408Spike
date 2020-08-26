@@ -15,7 +15,7 @@ function Championship2001(props) {
             </div>
             
             <Typography align='center' variant='h6'>
-                On April 6, 1992, Duke won its second national championship in Minneapolis, MN by beating the Arizona Wildcats. 
+                On April 2, 2001, Duke won its third national championship in Minneapolis, MN by beating the Arizona Wildcats. 
                 <br/>
                 Duke entered the NCAA Tournament as the #1 seed, led by Shane Battier who was the tournament's Most Valuable Player.
                 <br/>
