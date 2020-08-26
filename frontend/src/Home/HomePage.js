@@ -1,10 +1,10 @@
 import React from 'react';
 import {Typography} from '@material-ui/core';
 import ChampionshipButton from './ChampionshipButton';
+import ChampionshipImage from '../resources/ChampionshipBanner.jpeg';
 import '../CommonStylings/CenteredImage.css';
 import '../CommonStylings/FullDiv.css';
 
-import ChampionshipImage from '../resources/ChampionshipBanner.jpeg';
 
     
 function HomePage(props) {
