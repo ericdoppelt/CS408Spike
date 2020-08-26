@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {Button, Typography} from '@material-ui/core';
+import {Button} from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ( {
@@ -9,7 +9,7 @@ const styles = theme => ( {
       marginLeft: '5%',
       marginRight: '5%',
       width: "90%",
-      height: '50px',
+      height: '70px',
       fontSize: '25px',
     },
     link: {
