@@ -1,35 +1,29 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {Button, Typography} from '@material-ui/core';
+import ChampionshipButton from './ChampionshipButton';
 import './HomePage.css';
+
+import ChampionshipImage from '../resources/ChampionshipBanner.jpeg';
+
+    
 function HomePage(props) {
     return(
         <div>
-            <Typography variant="h1"> Welcome to my CS408 Spike!</Typography>
-            <Typography variant="h3"> Please choose a Duke NCAA National Champtionship.</Typography>
-            {createButtonYear(1991)}
-            {createButtonYear(1992)}
-            {createButtonYear(2001)}
-            {createButtonYear(2010)}
-            {createButtonYear(2015)}
+            <Typography align='center' variant="h1"> Welcome to my CS408 Spike!</Typography>
+            <Typography align='center' variant="h3"> Please choose a Duke NCAA National Champtionship.</Typography>
+            <div class='bannerImage'>
+                <img src={ChampionshipImage}></img>
+            </div>
+            <ChampionshipButton year='1991'/>
+            <ChampionshipButton year='1992'/>
+            <ChampionshipButton year='2001'/>
+            <ChampionshipButton year='2010'/>
+            <ChampionshipButton year='2015'/>
         </div>
     );
 }
 
-function createButtonYear(year) {
-    return(
-        <Link to={"/" + year}>
-            <Button
-              fullWidth
-              variant='contained'
-              color='primary'
-              size='large'
-              className='yearButton'
-              >
-              {year}
-            </Button>
-        </Link>
-    );
-}
 
-export default HomePage;
+
+export default (HomePage);
