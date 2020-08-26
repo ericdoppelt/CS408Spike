@@ -1,6 +1,6 @@
 
 /* Via https://reactgo.com/css-center-images/ */
-  .bannerImage img{
+.centeredImage img{
     display: block;
     margin-left: auto;
     margin-right: auto;

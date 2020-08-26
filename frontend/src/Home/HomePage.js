@@ -2,17 +2,18 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {Button, Typography} from '@material-ui/core';
 import ChampionshipButton from './ChampionshipButton';
-import './HomePage.css';
+import '../CommonStylings/CenteredImage.css';
+import '../CommonStylings/FullDiv.css';
 
 import ChampionshipImage from '../resources/ChampionshipBanner.jpeg';
 
     
 function HomePage(props) {
     return(
-        <div>
+        <div class='fullDiv'>
             <Typography align='center' variant="h1"> Welcome to my CS408 Spike!</Typography>
             <Typography align='center' variant="h3"> Please choose a Duke NCAA National Champtionship.</Typography>
-            <div class='bannerImage'>
+            <div class='centeredImage'>
                 <img src={ChampionshipImage}></img>
             </div>
             <ChampionshipButton year='1991'/>
