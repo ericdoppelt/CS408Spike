@@ -1,6 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import {Button, Typography} from '@material-ui/core';
+import {Typography} from '@material-ui/core';
 import ChampionshipButton from './ChampionshipButton';
 import '../CommonStylings/CenteredImage.css';
 import '../CommonStylings/FullDiv.css';
@@ -14,7 +13,7 @@ function HomePage(props) {
             <Typography align='center' variant="h1"> Welcome to my CS408 Spike!</Typography>
             <Typography align='center' variant="h3"> Please choose a Duke NCAA National Champtionship.</Typography>
             <div class='centeredImage'>
-                <img src={ChampionshipImage}></img>
+                <img alt='duke championship banners' src={ChampionshipImage}></img>
             </div>
             <ChampionshipButton year='1991'/>
             <ChampionshipButton year='1992'/>
