@@ -5,23 +5,24 @@ import ChampionshipImage from '../resources/ChampionshipBanner.jpeg';
 import '../CommonStylings/CenteredImage.css';
 import '../CommonStylings/FullDiv.css';
 
-
-    
 function HomePage(props) {
-    const [currentTime, setCurrentTime] = useState(0);
-
+    const [currentTime, setCurrentTime] = useState();
+    
     useEffect(() => {
-        fetch('/time').then(res => res.json()).then(data => {
-          setCurrentTime(data.time);
-        });
-      }, []);
+        fetch("http://127.0.0.1:5000/api/time")
+        .then(res => res.json())
+        .then(data => setCurrentTime(data.time))
 
+        fetch("http://127.0.0.1:5000/api/db")
+        .then(res => res.json())
+        .then(data => console.log(data))
+      }, []);
 
     return(
         <div class='fullDiv'>
             <Typography align='center' variant="h1"> Welcome to my CS408 Spike!</Typography>
             <Typography align='center' variant="h3"> Please choose a Duke NCAA National Champtionship.</Typography>
-            <Typography> {currentTime} </Typography>
+            <Typography> d + {currentTime} </Typography>
             <div class='centeredImage'>
                 <img alt='duke championship banners' src={ChampionshipImage}></img>
             </div>
@@ -33,14 +34,6 @@ function HomePage(props) {
         </div>
     );
 
-
-}
-
-function getTime() {
-    let time;
-    fetch('/time').then(res => res.json()).then(data => (time = data));
-    console.log(time);
-    return time;
 }
 
 export default (HomePage);
