@@ -3,7 +3,7 @@ import {Typography} from '@material-ui/core';
 import ChampionshipImage from '../resources/Championship2015.jpg';
 import '../CommonStylings/CenteredImage.css';
 import '../CommonStylings/FullDiv.css';
-import ReturnButton from './ReturnButton';
+import ReturnButton from '../CommonComponents/ReturnButton';
 
 function Championship2015(props) {
     return(
@@ -25,7 +25,7 @@ function Championship2015(props) {
                 UNC lost to Wisconsin in the Sweet Sixteen in 2015. Duke also beat them in <a href='https://www.youtube.com/watch?v=P9XCGc4OVHk'>thrilling fashion</a> that year in front of the Crazies.
                 <br/>
                 <br/>
-                You can watch highlights from the championship game <a href='youtube.com/watch?v=WxSZKIOGqlE'>here</a>.
+                You can watch highlights from the championship game <a href='https://www.youtube.com/watch?v=WxSZKIOGqlE'>here</a>.
             </Typography>
 
             <ReturnButton/>

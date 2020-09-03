@@ -5,31 +5,31 @@ import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ( {
     button: {
-      marginTop: '15px',
-      marginLeft: '5%',
-      marginRight: '5%',
-      width: "90%",
-      height: '70px',
-      fontSize: '25px',
+      marginTop: '30px',
+      marginLeft: '35%',
+      marginRight: '35%',
+      marginBottom: '30px',
+      width: "30%",
+      height: '50px',
+      fontSize: '20px',
     },
     link: {
         textDecoration: 'none',
     }
   } );
 
-function ChampionshipButton(props) {
+function ReturnButton(props) {
     const { classes } = props;
     return(
-        <Link className={classes.link} to={"/championships/" + props.year}>
+        <Link className={classes.link} to={"/"}>
             <Button
               className={classes.button}
               variant='contained'
-              color='primary'
               >
-              {props.year}
+              Return to Main Menu
             </Button>
         </Link>
     );
 }
 
-export default withStyles(styles)(ChampionshipButton);
+export default withStyles(styles)(ReturnButton);
