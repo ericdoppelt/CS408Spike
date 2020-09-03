@@ -8,6 +8,7 @@ const styles = theme => ( {
       marginTop: '15px',
       marginLeft: '5%',
       marginRight: '5%',
+      marginBottom: '15px',
       width: "90%",
       height: '70px',
       fontSize: '25px',
