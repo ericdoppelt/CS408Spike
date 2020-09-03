@@ -6,6 +6,7 @@ import Championship1992 from './Championships/Championship1992';
 import Championship2001 from './Championships/Championship2001';
 import Championship2010 from './Championships/Championship2010';
 import Championship2015 from './Championships/Championship2015';
+import FunFacts from './Facts/FunFacts';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/championships/2001' component={Championship2001}/>
           <Route path='/championships/2010' component={Championship2010}/>
           <Route path='/championships/2015' component={Championship2015}/>
+          <Route path='/facts/fun' component={FunFacts}/>
         </div>
       </Router>
     );

@@ -3,7 +3,7 @@ import {Typography} from '@material-ui/core';
 import ChampionshipImage from '../resources/Championship2001.jpg';
 import '../CommonStylings/CenteredImage.css';
 import '../CommonStylings/FullDiv.css';
-import ReturnButton from './ReturnButton';
+import ReturnButton from '../CommonComponents/ReturnButton';
 
 function Championship2001(props) {
     return(
