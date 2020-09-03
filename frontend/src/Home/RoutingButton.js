@@ -20,13 +20,13 @@ const styles = theme => ( {
 function ChampionshipButton(props) {
     const { classes } = props;
     return(
-        <Link className={classes.link} to={"/championships/" + props.year}>
+        <Link className={classes.link} to={props.route}>
             <Button
               className={classes.button}
               variant='contained'
               color='primary'
               >
-              {props.year}
+              {props.message}
             </Button>
         </Link>
     );
