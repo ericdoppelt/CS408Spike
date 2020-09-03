@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {Typography} from '@material-ui/core';
 import ChampionshipButton from './ChampionshipButton';
 import ChampionshipImage from '../resources/ChampionshipBanner.jpeg';
