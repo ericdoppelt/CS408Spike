@@ -25,7 +25,7 @@ function Championship2015(props) {
                 UNC lost to Wisconsin in the Sweet Sixteen in 2015. Duke also beat them in <a href='https://www.youtube.com/watch?v=P9XCGc4OVHk'>thrilling fashion</a> that year in front of the Crazies.
                 <br/>
                 <br/>
-                You can watch highlights from the championship game <a href='youtube.com/watch?v=WxSZKIOGqlE'>here</a>.
+                You can watch highlights from the championship game <a href='https://www.youtube.com/watch?v=WxSZKIOGqlE'>here</a>.
             </Typography>
 
             <ReturnButton/>
