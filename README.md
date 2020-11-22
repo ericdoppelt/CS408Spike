@@ -1,7 +1,7 @@
 # warmup_spike
 
 Basic project to interact with data contained in a remote data source.
-Deployed URL: https://cs408.netlify.app/facts/fun
+Deployed URL: https://cs408.netlify.app/
 
 Name: Eric Doppelt (ead45)
 
